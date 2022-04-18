@@ -20,7 +20,7 @@ class ShoeOrderItem(BaseOrderItem):
     Creates instance of ShoeOrderItem
     """
     def __init__(self, product, price, quantity, size):
-        super().__init__(product, price, quantity)
+        super().__init__(product, price, quantity) #super is used to access the parent class
         self.size = size
         
     def describe(self):
